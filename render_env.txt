@@ -1,0 +1,9 @@
+BOT_TOKEN=yaha_bot_token_daalo
+ADMIN_ID=123456789
+DATABASE_URL=yaha_render_database_url_daalo
+UPI_ID=yourupi@bank
+UPI_NAME=Tumhara Naam
+SUPPORT_USERNAME=@tumhara_username
+BRAND_NAME=Genius Premium Store
+DASH_KEY=koi_lamba_password_likho
+DB_LIFETIME_DAYS=30
