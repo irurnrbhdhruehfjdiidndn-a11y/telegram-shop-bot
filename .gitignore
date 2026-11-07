@@ -1,0 +1,7 @@
+env
+__pycache__/
+*.pyc
+*.db
+shop_backup_*.json
+venv/
+.venv/
