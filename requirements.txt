@@ -1,0 +1,4 @@
+aiogram>=3.4
+python-dotenv>=1.0
+qrcode[pil]>=7.4
+psycopg[binary]>=3.1
