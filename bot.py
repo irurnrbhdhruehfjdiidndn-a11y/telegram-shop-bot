@@ -1586,6 +1586,7 @@ async def start_web():
     app = web.Application()
     app.router.add_get("/", h_home)
     app.router.add_get("/health", h_health)
+    app.router.add_get("/api/health", h_health)  # Render ke automatic health check path ke liye fix
     app.router.add_get("/admin", h_admin)
     runner = web.AppRunner(app)
     await runner.setup()
@@ -1622,7 +1623,7 @@ async def main():
     await bot.delete_webhook(drop_pending_updates=True)
     BOT_USERNAME = (await bot.get_me()).username or ""
     tasks = [
-        asyncio.create_task(backup_loop(bot)),
+        asyncio.create_task(backup_log := backup_loop(bot)),
         asyncio.create_task(expiry_loop(bot)),
         asyncio.create_task(self_ping()),
     ]
